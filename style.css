@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #873636;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.tagline {
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+#langToggle {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0c040;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  background-color: #873636;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#chartDisplay {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#chartDisplay div {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8em;
+  background-color: #f0f0f0;
+  border-top: 1px solid #e0e0e0;
+}

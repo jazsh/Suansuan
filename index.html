@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>建洪算算 - BaZi Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>建洪算算 <span class="tagline">BaZi Calculator</span></h1>
+    <button id="langToggle">切换到中文</button>
+  </header>
+  <main>
+    <section id="formSection">
+      <h2 id="formTitle">Enter your birth details</h2>
+      <form id="baziForm">
+        <label>
+          <span id="nameLabel">Name (optional):</span>
+          <input type="text" id="name" />
+        </label>
+        <label>
+          <span id="dateLabel">Date of birth (YYYY-MM-DD):</span>
+          <input type="date" id="birthDate" required />
+        </label>
+        <label>
+          <span id="timeLabel">Time of birth (24h HH:MM):</span>
+          <input type="time" id="birthTime" required />
+        </label>
+        <button type="submit" id="submitBtn">Calculate</button>
+      </form>
+    </section>
+    <section id="resultSection" class="hidden">
+      <h2 id="resultTitle">Your BaZi Chart</h2>
+      <div id="chartDisplay"></div>
+      <h3 id="personalityTitle">Personality &amp; Interests</h3>
+      <p id="personality"></p>
+      <h3 id="fortuneTitle">Monthly Fortune (Aug–Dec 2025)</h3>
+      <div id="fortune"></div>
+    </section>
+  </main>
+  <footer>
+    <p>©2025 建洪算算. Predictions are for educational and entertainment purposes only.</p>
+  </footer>
+</body>
+</html>
